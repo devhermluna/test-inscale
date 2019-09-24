@@ -1,0 +1,17 @@
+@import '../variable'
+
+.card
+  background: white
+  border-radius: $default-corner-radius
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.02), 0 10px 15px rgba(0, 0, 0, 0.05)
+  overflow: hidden
+  
+  &-header
+    padding: 10px 15px
+    border-bottom: 1px solid $card-header-border-color
+
+  &-body
+    padding: 15px
+
+    &--no-padding
+      padding: 0

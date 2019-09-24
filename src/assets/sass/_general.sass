@@ -1,0 +1,89 @@
+@import 'variable'
+
+.react-datepicker
+  font-family: $default-font !important
+  border: none !important
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.02), 0 10px 15px rgba(0, 0, 0, 0.05)
+
+  .react-datepicker__header
+    border: none
+    padding-top: 10px
+
+    .react-datepicker__current-month
+      font-size: 13px
+      letter-spacing: 0.5px
+
+  .react-datepicker__triangle
+    display: none
+
+  .react-datepicker__month
+    background: white
+
+.react-datepicker__input-container
+    input
+      padding: 5px
+      margin-left: 5px
+      border: 1px solid #eee
+        radius: 5px
+      outline: none
+      font-size: 12px
+
+      &[disabled]
+        background: #eee
+
+.search
+  position: relative
+  height: 30px
+  flex: 1
+
+  i
+    color: darken($input-placeholder-color, 10%)
+
+  input 
+    position: absolute
+    top: 0
+    left: 0
+    background: none
+    border: none
+    outline: none
+    padding: 0 18px
+    height: 30px
+    width: 100%
+
+.dot-success, .dot-danger
+  &:before
+    content: ''
+    display: block
+    height: 8px
+    width: 8px
+    border-radius: 50%
+    background: green
+    margin-right: 5px
+
+.dot-danger
+  &:before
+    background: red
+
+.content-group
+  &:not(:first-of-type)
+    margin-top: 25px
+
+  &-title
+    display: inline-block
+    background: #e2e2e2
+    padding: 5px 8px
+    border-radius: 5px
+    text-transform: uppercase
+    font-size: 12px
+    margin-bottom: 5px
+
+  &-item
+    font-size: 13px
+
+    p:not(:first-of-type)
+      margin-top: 5px
+
+    p span
+      font-weight: 800
+      display: inline-block
+      width: 115px
