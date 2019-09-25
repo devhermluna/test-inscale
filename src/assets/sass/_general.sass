@@ -57,12 +57,12 @@
     height: 8px
     width: 8px
     border-radius: 50%
-    background: green
+    background: $success
     margin-right: 5px
 
 .dot-danger
   &:before
-    background: red
+    background: $danger
 
 .content-group
   &:not(:first-of-type)
@@ -87,3 +87,26 @@
       font-weight: 800
       display: inline-block
       width: 115px
+
+.button-icon
+  background: none
+  border: none
+  cursor: pointer
+  outline: none
+  background: $primary
+  padding: 6px
+  width: 30px
+  border-radius: 5px
+
+  &-danger
+    background: $danger
+
+  + .button-icon
+    margin-left: 5px
+
+  i
+    font-size: 14px
+    color: white
+
+.color-danger, .color-danger *
+  color: $danger

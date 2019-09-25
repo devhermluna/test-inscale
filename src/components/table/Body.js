@@ -10,14 +10,12 @@ const TableBody = ({
   children: React.node,
   className?: String
 }): React.node => (
-  <tbody>
-    <tr
-      {...rest}
-      className={classnames('table-body', className)}
-    >
-      {children}
-    </tr>
-  </tbody>
+  <tr
+    {...rest}
+    className={classnames('table-body', className)}
+  >
+    {children}
+  </tr>
 );
 
 TableBody.defaultProps = {
